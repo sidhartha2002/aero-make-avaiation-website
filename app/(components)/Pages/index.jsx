@@ -384,13 +384,13 @@ export const Pages = () => {
                 </span>
               </h2>
               <p className="parts-item__caption-description">
-                At the heart of Aeromake Aviation's success lies its esteemed
-                customer base, consisting of the industry's most prominent
+                At the heart of Aeromake Aviations success lies its esteemed
+                customer base, consisting of the industrys most prominent
                 players. Leading commercial airlines, cargo carriers, regional
                 operators, and MROs have all turned to Aeromake Aviation for
                 their aviation material needs. This diverse clientele reflects
-                the company's unwavering dedication to quality and its ability
-                to cater to the unique requirements of a wide array of aviation
+                the companys unwavering dedication to quality and its ability to
+                cater to the unique requirements of a wide array of aviation
                 enterprises.
               </p>
             </figcaption>
@@ -406,7 +406,7 @@ export const Pages = () => {
                 </span>
               </h2>
               <p className="parts-item__caption-description">
-                Aeromake Aviation's journey to excellence is underpinned by its
+                Aeromake Aviations journey to excellence is underpinned by its
                 rich and extensive experience in the aviation sector. This
                 experience has allowed the company to develop and fine-tune its
                 suite of services, resulting in unmatched support for aircraft
@@ -425,7 +425,7 @@ export const Pages = () => {
                 <span className="oh__inner">Innovation as a Driving Force</span>
               </h2>
               <div className="parts-item__caption-description">
-                Aeromake Aviation's dedication to innovation sets it apart in a
+                Aeromake Aviations dedication to innovation sets it apart in a
                 competitive industry. The company continually pioneers
                 groundbreaking solutions, harnessing its expertise to address
                 the multifaceted challenges faced by its clients. These
@@ -467,8 +467,8 @@ export const Pages = () => {
                 </span>
               </h2>
               <div className="parts-item__caption-description">
-                Aeromake Aviation's commitment to client satisfaction is
-                engrained in every facet of its operations. The company's
+                Aeromake Aviations commitment to client satisfaction is
+                engrained in every facet of its operations. The companys
                 streamlined communication channels and dedicated customer
                 service team ensure that client queries and requests are handled
                 promptly and with utmost care. Aeromake Aviation excels in
@@ -549,9 +549,9 @@ export const Pages = () => {
               </h2>
               <p className="parts-item__caption-description">
                 We recognize that in the world of aviation, time is of the
-                essence. When you're in search of crucial aircraft materials,
-                you can't afford delays or fruitless searches. That's why, at
-                our state-of-the-art UAE warehouse, we maintain an extensive and
+                essence. When youre in search of crucial aircraft materials, you
+                cant afford delays or fruitless searches. Thats why, at our
+                state-of-the-art UAE warehouse, we maintain an extensive and
                 ever-expanding inventory. Our mission is to empower your journey
                 by offering efficient solutions that get you in the air with
                 minimal downtime.
@@ -586,7 +586,7 @@ export const Pages = () => {
                 seamless experience for every client. Your voyage begins with
                 us, where we turn your aspirations into aviation reality. Trust
                 Aeromake Aviation for excellence in aircraft materials, repair,
-                and upgrades. Let's take flight together and elevate your
+                and upgrades. Lets take flight together and elevate your
                 aviation experience to new heights!
               </p>
             </figcaption>
@@ -769,13 +769,13 @@ export const Pages = () => {
                   position: "relative",
                 }}
               >
-                In our pursuit of excellence, we don't just stop at selecting
-                the right facility; we also conduct a thorough review and
-                assessment of all quotes. This diligence ensures that we not
-                only meet but exceed your expectations with meticulous
-                follow-through on every aspect of the repair process. We
-                understand the importance of prompt delivery, and our commitment
-                to efficiency is evident in every step we take.
+                In our pursuit of excellence, we dont just stop at selecting the
+                right facility; we also conduct a thorough review and assessment
+                of all quotes. This diligence ensures that we not only meet but
+                exceed your expectations with meticulous follow-through on every
+                aspect of the repair process. We understand the importance of
+                prompt delivery, and our commitment to efficiency is evident in
+                every step we take.
               </div>
             </h2>
           </div>
