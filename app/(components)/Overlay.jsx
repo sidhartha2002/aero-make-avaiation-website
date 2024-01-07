@@ -6,6 +6,10 @@ import GoogleAnim from "./GoogleAnim";
 import Spline from "@splinetool/react-spline";
 import GlowButton from "./GlowButton";
 
+import lottie from "lottie-web";
+const animationData = "/lotties/arrowAnim.json"; // /lotties/arrowAnim.json
+import { createRef, useEffect } from "react";
+
 export const Overlay = () => {
   const { progress } = useProgress();
   const { play, end, setPlay, hasScroll } = usePlay();
@@ -27,12 +31,23 @@ export const Overlay = () => {
               <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold flex-col gap-5">
                 <h1>Unleashing Precise</h1>
                 <h1>Aftermarket Solutions</h1>
+                <img
+                  src={logo} // Replace with the path to your image
+                  alt="Description of the image" // Replace with a descriptive alt text
+                  width="100" // Specify the width if needed
+                  height="100" // Specify the height if needed
+                />
                 {/* <GlowButton /> */}
               </div>
             </div>
           </div>
           {/*  */}
           <div className="home-glow-button absolute bottom-28 z-50 w-full">
+            <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold">
+              <div className="arrow-lottie h-36 w-36 mb-7 ml-64">
+                <ArrowLottie />
+              </div>
+            </div>
             <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold">
               <a
                 href="#"
@@ -41,7 +56,7 @@ export const Overlay = () => {
                 }}
               >
                 <button class="glow-button">
-                  <span>nowww</span>
+                  <span>Explore</span>
                 </button>
               </a>
             </div>
@@ -69,4 +84,37 @@ function SplineAirplane() {
   return (
     <Spline scene="https://prod.spline.design/in9tVhVQI0AHAtzQ/scene.splinecode" />
   );
+}
+
+function ArrowLottie() {
+  let animationContainer = createRef();
+
+  useEffect(() => {
+    const anim = lottie.loadAnimation({
+      container: animationContainer.current,
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      // initialSegment: [2, 125],
+      path: animationData,
+      // animationData,
+    });
+    setTimeout(() => {
+      anim.play();
+    }, 1500);
+    return () => anim.destroy();
+    // const anim = lottie.loadAnimation({
+    //   container: animationContainer.current,
+    //   renderer: "svg",
+    //   loop: false,
+    //   autoplay: true,
+    //   // initialSegment: [2, 125],
+    //   path: animationData,
+    //   // animationData,
+    // });
+
+    // return () => anim.destroy();
+  }, []);
+
+  return <div ref={animationContainer}></div>;
 }

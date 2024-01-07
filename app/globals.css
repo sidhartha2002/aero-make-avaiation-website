@@ -295,3 +295,7 @@ home-glow-button:before {
   background-image: radial-gradient(ellipse at bottom, #1d0559 0%, #020112 50%);
   opacity: 0.4;
 }
+
+.arrow-lottie {
+  transform: rotate(-90deg);
+}
