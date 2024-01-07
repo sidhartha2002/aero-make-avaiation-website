@@ -1,6 +1,5 @@
-import { usePlay } from "../contexts/Play.jsx";
-const logo =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/9e96e4f789ec9def96bdb133295ae55e281774ef/src/assets/images/logo.svg";
+import { usePlay } from "../(contexts)/Play.jsx";
+const logo = "/images/logo.svg";
 
 export const Header = () => {
   const { setMenu } = usePlay();

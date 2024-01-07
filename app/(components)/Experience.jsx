@@ -4,24 +4,19 @@ import { gsap } from "gsap";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
 import { Euler, Group, Vector3 } from "three";
-import { usePlay } from "../contexts/Play";
-import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
+import { usePlay } from "../(contexts)/Play";
+import { fadeOnBeforeCompile } from "../(utils)/fadeMaterial";
 import { Airplane } from "./Airplane";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
 import { Speed } from "./Speed";
 import { TextSection } from "./TextSection";
 
-const image1 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image2 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image3 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image4 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image5 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
+const image1 = "/images/01TrustedGlobalPartner.jpg";
+const image2 = "/images/01TrustedGlobalPartner.jpg";
+const image3 = "/images/01TrustedGlobalPartner.jpg";
+const image4 = "/images/01TrustedGlobalPartner.jpg";
+const image5 = "/images/01TrustedGlobalPartner.jpg";
 
 const LINE_NB_POINTS = 1000;
 const CURVE_DISTANCE = 250;

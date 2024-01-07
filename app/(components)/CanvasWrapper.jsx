@@ -1,6 +1,4 @@
-"use client";
-
-import { usePlay } from "../contexts/Play.jsx";
+import { usePlay } from "../(contexts)/Play.jsx";
 import { Canvas } from "@react-three/fiber";
 import Triangle from "./Triangle.jsx";
 import { ScrollControls } from "@react-three/drei";
@@ -8,6 +6,7 @@ import { Experience } from "./Experience.jsx";
 import { Overlay } from "./Overlay.jsx";
 import { useMemo } from "react";
 import { EffectComposer, Noise } from "@react-three/postprocessing";
+import GoogleAnim from "./GoogleAnim";
 
 export const CanvasWrapper = () => {
   const { play, end } = usePlay();
@@ -15,15 +14,18 @@ export const CanvasWrapper = () => {
   const effects = useMemo(
     () => (
       <EffectComposer>
-        <Noise opacity={0.08} />
+        <Noise opacity={0.0} />
       </EffectComposer>
     ),
     []
   );
 
   return (
+    // <div className="canvasWrapper">
     <div className="canvasWrapper">
-      <Canvas>
+      <Canvas
+        className={` fixed h-full w-full ${end ? "canvas-disappear" : ""}`}
+      >
         {!play && <Triangle />}
 
         <color attach="background" args={["#ececec"]} />

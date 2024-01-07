@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { usePlay } from "../../contexts/Play.jsx";
+import { usePlay } from "../../(contexts)/Play.jsx";
 import Splitting from "splitting";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -10,16 +10,11 @@ import "./page.css";
 import "splitting/dist/splitting.css";
 import "splitting/dist/splitting-cells.css";
 
-const image1 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image2 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image3 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image4 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
-const image5 =
-  "https://raw.githubusercontent.com/sidhartha2002/aero-make-aviation/main/src/assets/images/01.Trusted%20Global%20Partner.jpg";
+const image1 = "/images/01TrustedGlobalPartner.jpg";
+const image2 = "/images/01TrustedGlobalPartner.jpg";
+const image3 = "/images/01TrustedGlobalPartner.jpg";
+const image4 = "/images/01TrustedGlobalPartner.jpg";
+const image5 = "/images/01TrustedGlobalPartner.jpg";
 
 Splitting({ by: "chars" });
 

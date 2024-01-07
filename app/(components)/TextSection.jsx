@@ -1,8 +1,8 @@
 import { Text, Image } from "@react-three/drei";
 import { useLoader } from "@react-three/fiber";
-import { fadeOnBeforeCompileFlat } from "../utils/fadeMaterial.js";
+import { fadeOnBeforeCompileFlat } from "../(utils)/fadeMaterial";
 import * as THREE from "three";
-import { usePlay } from "../contexts/Play.jsx";
+import { usePlay } from "../(contexts)/Play.jsx";
 
 function Image2({ title, subtitle, url }) {
   const { play, end, setPreview } = usePlay();
