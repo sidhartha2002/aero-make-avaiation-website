@@ -24,7 +24,6 @@ export const FeatureTitle = ({ children, id }: Props) => {
     // to fix the issue in the iframe, we need to pass in the document here and thus
     // tell TypeScript that we know what we're doing. If you're implementing
     // this in your own website, you can just pass in the root property as well as the documentRef.
-    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     root: documentRef,
   });
