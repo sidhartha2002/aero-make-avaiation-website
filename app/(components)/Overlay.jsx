@@ -4,6 +4,7 @@ const logo = "/images/logo.svg";
 import GoogleAnim from "./GoogleAnim";
 
 import Spline from "@splinetool/react-spline";
+import GlowButton from "./GlowButton";
 
 export const Overlay = () => {
   const { progress } = useProgress();
@@ -26,6 +27,7 @@ export const Overlay = () => {
               <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold flex-col gap-5">
                 <h1>Unleashing Precise</h1>
                 <h1>Aftermarket Solutions</h1>
+                {/* <GlowButton /> */}
               </div>
             </div>
           </div>
