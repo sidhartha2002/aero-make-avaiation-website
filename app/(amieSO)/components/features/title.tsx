@@ -10,6 +10,7 @@ type Props = {
 
 export const FeatureTitle = ({ children, id }: Props) => {
   const ref = useRef<HTMLParagraphElement>(null);
+  // @ts-ignore
   const documentRef = useRef(document);
   const isInView = useInView(ref, {
     margin: "-50% 0px -50% 0px",
