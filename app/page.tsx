@@ -25,9 +25,9 @@ export default function Home() {
 
   return (
     <PlayProvider>
-      {/* <CanvasWrapper /> */}
+      <CanvasWrapper />
       {/* <GoogleAnim /> */}
-      <AmiesoComponent />
+      {/* <AmiesoComponent /> */}
     </PlayProvider>
 
     // <div className="p-2 w-[800px] h-[800px] bg-red-600">
