@@ -22,9 +22,11 @@ export const CanvasWrapper = () => {
 
   return (
     // <div className="canvasWrapper">
-    <div className="canvasWrapper">
+    <div className="relative h-screen w-screen bg-blue-400">
       <Canvas
-        className={` fixed h-full w-full ${end ? "canvas-disappear" : ""}`}
+        className={` absolute h-full w-full z-2 overflow-hidden ${
+          end ? "canvas-disappear" : ""
+        }`}
       >
         {!play && <Triangle />}
 

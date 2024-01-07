@@ -3,6 +3,8 @@ import { usePlay } from "../(contexts)/Play";
 const logo = "/images/logo.svg";
 import GoogleAnim from "./GoogleAnim";
 
+import Spline from "@splinetool/react-spline";
+
 export const Overlay = () => {
   const { progress } = useProgress();
   const { play, end, setPlay, hasScroll } = usePlay();
@@ -13,26 +15,39 @@ export const Overlay = () => {
     >
       {progress === 100 && (
         <div
-          className={`intro ${play ? "intro--disappear" : ""} ${
-            end ? "intro--none" : ""
-          }`}
+          className={`intro block overflow-hidden ${
+            play ? "intro--disappear" : ""
+          } ${end ? "intro--none" : ""}`}
         >
-          <div className="bg-green-700">
-            <a
-              className="hover:arrow-translate-x d-inline-flex align-items-center font-weight-medium text-white font-weight-bold d-inline-flex align-items-center"
-              href="#"
-              onClick={() => {
-                setPlay(true);
-              }}
-            >
-              <span>Explore Me</span>
-            </a>
-          </div>
-          {/*  */}{" "}
-          <div className=" p-2 w-[800px] h-[800px] bg-gray-50-600">
-            <div className="h-full w-full overflow-auto">
-              <GoogleAnim />
+          {/* Explore button */}
+          {/* <div className="bg-red-400 absolute bottom-10 block"> */}
+          <div className="">
+            <div className=" absolute top-24 z-50 w-full">
+              <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold flex-col gap-5">
+                <h1>Unleashing Precise</h1>
+                <h1>Aftermarket Solutions</h1>
+              </div>
             </div>
+          </div>
+          {/*  */}
+          <div className="home-glow-button absolute bottom-28 z-50 w-full">
+            <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold">
+              <a
+                href="#"
+                onClick={() => {
+                  setPlay(true);
+                }}
+              >
+                <button class="glow-button">
+                  <span>nowww</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          {/*  */}
+          {/*  */}{" "}
+          <div className="h-full w-full overflow-auto">
+            <SplineAirplane />
           </div>
           {/*  */}
           {/* <p className="intro__scroll">Scroll to explore</p> */}
@@ -48,6 +63,8 @@ export const Overlay = () => {
   );
 };
 
-function trial() {
-  console.log("hsuidhfisdi");
+function SplineAirplane() {
+  return (
+    <Spline scene="https://prod.spline.design/in9tVhVQI0AHAtzQ/scene.splinecode" />
+  );
 }

@@ -23,9 +23,7 @@ export default function Home() {
 
   return (
     <PlayProvider>
-      <div className="relative h-screen w-screen">
-        <CanvasWrapper />
-      </div>
+      <CanvasWrapper />
     </PlayProvider>
 
     // <div className="p-2 w-[800px] h-[800px] bg-red-600">
@@ -37,10 +35,6 @@ export default function Home() {
 }
 
 {
-}
-
-function trial() {
-  console.log("wsidjoi");
 }
 
 // <PlayProvider>
