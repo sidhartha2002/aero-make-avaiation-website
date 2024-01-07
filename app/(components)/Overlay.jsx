@@ -3,12 +3,15 @@ import { usePlay } from "../(contexts)/Play";
 const logo = "/images/logo.svg";
 import GoogleAnim from "./GoogleAnim";
 
-import Spline from "@splinetool/react-spline";
+// import Spline from "@splinetool/react-spline";
 import GlowButton from "./GlowButton";
 
 import lottie from "lottie-web";
 const animationData = "/lotties/arrowAnim.json"; // /lotties/arrowAnim.json
 import { createRef, useEffect } from "react";
+
+import { lazy, Suspense } from "react";
+const Spline = lazy(() => import("@splinetool/react-spline"));
 
 export const Overlay = () => {
   const { progress } = useProgress();
@@ -44,7 +47,7 @@ export const Overlay = () => {
           {/*  */}
           <div className="home-glow-button absolute bottom-28 z-50 w-full">
             <div className="flex justify-center text-center text-4xl lg:text-6xl font-bold">
-              <div className="arrow-lottie h-36 w-36 mb-7 ml-64">
+              <div className="arrow-lottie h-24 w-24 lg:h-36 lg:w-36 mb-5 ml-64">
                 <ArrowLottie />
               </div>
             </div>
@@ -63,7 +66,7 @@ export const Overlay = () => {
           </div>
           {/*  */}
           {/*  */}{" "}
-          <div className="h-full w-full overflow-auto">
+          <div className="bg-blue-400  h-full w-full overflow-auto">
             <SplineAirplane />
           </div>
           {/*  */}
@@ -80,9 +83,14 @@ export const Overlay = () => {
   );
 };
 
+// https://docs.spline.design/67b4c8ec0d2b46dd8588a99a7e94db6e
+// <spline-viewer> is much better : https://www.youtube.com/watch?v=c5sJEddepgQ
+// https://stackoverflow.com/questions/76239974/accurate-loading-screen-react-spline
 function SplineAirplane() {
   return (
-    <Spline scene="https://prod.spline.design/in9tVhVQI0AHAtzQ/scene.splinecode" />
+    <Suspense fallback={<div>Loading...</div>}>
+      <Spline scene="https://prod.spline.design/in9tVhVQI0AHAtzQ/scene.splinecode" />
+    </Suspense>
   );
 }
 
@@ -101,7 +109,7 @@ function ArrowLottie() {
     });
     setTimeout(() => {
       anim.play();
-    }, 1500);
+    }, 2500);
     return () => anim.destroy();
     // const anim = lottie.loadAnimation({
     //   container: animationContainer.current,
