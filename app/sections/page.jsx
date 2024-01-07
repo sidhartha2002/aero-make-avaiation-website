@@ -14,9 +14,5 @@ export default function SectionHome() {
     setcanvasVisible((prevVisibility) => !prevVisibility);
   };
 
-  return (
-    <div>
-      <AmiesoComponent />
-    </div>
-  );
+  return <div>{/* <AmiesoComponent /> */}</div>;
 }
