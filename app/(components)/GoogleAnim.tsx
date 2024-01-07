@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
+import AmiesoComponent from "../(amieSO)/AmiesoComponent";
 
 function GoogleAnim() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
@@ -60,10 +61,11 @@ function GoogleAnim() {
       </div>
 
       {activeCard && (
-        <div className="content-container absolute inset-0 flex justify-center overflow-auto pb-20">
+        <div className="content-container absolute inset-0 flex justify-center overflow-auto">
           <div
             className={twMerge(
-              "pointer-events-none relative top-[5vh] mb-20 min-h-screen w-full bg-white px-16 py-16 opacity-0 md:rounded-[4.5rem]",
+              /* top-[5vh] removed Sarthak change */
+              "pointer-events-none relative min-h-screen w-full bg-white opacity-0",
               animationState === "opening" && "animate-card-details",
               animationState === "closing" && "animate-card-details-hidden"
             )}
@@ -74,9 +76,13 @@ function GoogleAnim() {
             >
               👋
             </button>
-            <h1 className="text-4xl leading-[1.1] [white-space:balance] md:text-[120px]">
-              Animate so many things with just CSS
+            <h1 className="text-2xl leading-[1.1] [white-space:balance] md:text-[40px] bg-white">
+              SECTIONS
             </h1>
+            <div className=" bg-white overflow-auto">
+              {/* <AmiesoComponent /> */}
+            </div>
+            <div className="bg-green-400"></div>
           </div>
         </div>
       )}

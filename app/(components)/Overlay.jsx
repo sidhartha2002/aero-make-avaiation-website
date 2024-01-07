@@ -11,6 +11,8 @@ const animationData = "/lotties/arrowAnim.json"; // /lotties/arrowAnim.json
 import { createRef, useEffect } from "react";
 
 import { lazy, Suspense } from "react";
+import AmiesoComponent from "../(amieSO)/AmiesoComponent";
+import { div } from "three/examples/jsm/nodes/Nodes.js";
 const Spline = lazy(() => import("@splinetool/react-spline"));
 
 export const Overlay = () => {
@@ -76,7 +78,7 @@ export const Overlay = () => {
       <div className={` outro ${end ? "outro--appear" : ""}`}>
         {/* <div className="h-full w-full overflow-auto"> */}
 
-        <GoogleAnim />
+        {/* <GoogleAnim /> */}
         {/* </div> */}
       </div>
     </div>
@@ -88,7 +90,13 @@ export const Overlay = () => {
 // https://stackoverflow.com/questions/76239974/accurate-loading-screen-react-spline
 function SplineAirplane() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense
+      fallback={
+        <div>
+          <Loading />
+        </div>
+      }
+    >
       <Spline scene="https://prod.spline.design/in9tVhVQI0AHAtzQ/scene.splinecode" />
     </Suspense>
   );
@@ -125,4 +133,15 @@ function ArrowLottie() {
   }, []);
 
   return <div ref={animationContainer}></div>;
+}
+
+function Loading() {
+  return (
+    <div className="bg-yellow-400 h-full w-full text-6xl text-red-700">
+      <h1>Loading................</h1>
+      {/* <h1>Loading................</h1>
+      <h1>Loading................</h1>
+      <h1>Loading................</h1> */}
+    </div>
+  );
 }

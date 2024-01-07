@@ -8,7 +8,10 @@ import { useMemo } from "react";
 import { EffectComposer, Noise } from "@react-three/postprocessing";
 import GoogleAnim from "./GoogleAnim";
 
+import { useRouter } from "next/navigation";
+
 export const CanvasWrapper = () => {
+  const router = useRouter();
   const { play, end } = usePlay();
 
   const effects = useMemo(
@@ -19,10 +22,16 @@ export const CanvasWrapper = () => {
     ),
     []
   );
+  if (end) {
+    console.log("ENDED");
+    console.log("ENDED");
+    console.log("ENDED");
+    router.push("/sections");
+  }
 
   return (
     // <div className="canvasWrapper">
-    <div className="relative h-screen w-screen bg-blue-400">
+    <div className="relative h-screen w-screen bg-white">
       <Canvas
         className={` absolute h-full w-full z-2 overflow-hidden ${
           end ? "canvas-disappear" : ""

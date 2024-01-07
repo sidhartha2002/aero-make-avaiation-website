@@ -17,6 +17,8 @@
     "@splinetool/react-spline": "^2.2.6",
     "@studio-freight/lenis": "^1.0.29",
     "chroma-js": "^2.4.2",
+    "classnames": "^2.5.1",
+    "framer-motion": "^10.17.9",
     "gsap": "^3.11.5",
     "lamina": "^1.1.23",
     "lottie-web": "^5.12.2",
@@ -26,7 +28,8 @@
     "react-lottie": "^1.2.4",
     "splitting": "^1.0.6",
     "tailwind-merge": "^2.0.0",
-    "three": "^0.150.1"
+    "three": "^0.150.1",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
