@@ -31,7 +31,7 @@ export const CanvasWrapper = () => {
 
   return (
     // <div className="canvasWrapper">
-    <div className="relative h-screen w-screen bg-white">
+    <div className="relative h-screen w-screen bg-[#141516]">
       <Canvas
         className={` absolute h-full w-full z-2 overflow-hidden ${
           end ? "canvas-disappear" : ""

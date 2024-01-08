@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 import { opacity, slideUp } from "./anim";
 
 const words = [
-  "Explore",
-  "More",
-  "About",
-  "Us",
-  "at",
+  "Hello",
+  "Welcom",
+  "to",
   "Aero",
   "Make",
   "Aviation",
+  "Keep",
+  "Exploring...",
 ];
 
 export default function Index() {

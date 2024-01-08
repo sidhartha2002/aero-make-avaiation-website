@@ -15,7 +15,7 @@
         justify-content: center;
         margin-bottom: 100px;
     }
-    
+
     .modalContainer{
         height: 350px;
         width: 400px;
@@ -25,16 +25,16 @@
         background-color: white;
         pointer-events: none;
         overflow: hidden;
-        z-index: 3;
+        z-index: 20;
     }
-    
+
     .modalSlider{
         height: 100%;
         width: 100%;
         position: relative;
         transition: top 0.5s cubic-bezier(0.76, 0, 0.24, 1);
     }
-    
+
     .modal{
         height: 100%;
         width: 100%;
@@ -42,11 +42,11 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .modal img{
         height: auto;
     }
-    
+
     .cursor, .cursorLabel{
         width: 80px;
         height: 80px;
@@ -62,11 +62,11 @@
         font-weight: 300;
         pointer-events: none;
     }
-    
+
     .cursorLabel{
         background-color: transparent;
     }
-    
-    
+
+
 }
 

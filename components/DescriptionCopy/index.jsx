@@ -6,7 +6,7 @@ import Rounded from "../../common/RoundedButton";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
 export default function Index() {
   const phrase =
-    "Aeromake Aviation's journey aviation sector. This experience has allowed the company to develop and fine-tune its suite of services, resulting in unmatched support for aircraft inventory and top-tier component services. Their comprehensive offerings are designed to ensure that the wheels of aviation keep turning smoothly.";
+    "Aeromake Aviation's journey aviation  sdfsdfl[pdslfp sd fkdps fkpodsk pdkp sd f sdfpoksd df odsf ] sector. This experience has allowed the company to develop and fine-tune its suite of services, resulting in unmatched support for aircraft inventory and top-tier component services. Their comprehensive offerings are designed to ensure that the wheels of aviation keep turning smoothly.";
   const description = useRef(null);
   const isInView = useInView(description);
 

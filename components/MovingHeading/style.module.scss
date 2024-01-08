@@ -1,9 +1,9 @@
 .landing{
     position: relative;
     display: flex;
-    height: 70vh;
+    height: 40vh;
     overflow: hidden;
-    background: gray;
+    margin-bottom: 2px;
 
     img{
       object-fit: cover;
@@ -22,9 +22,9 @@
     .slider p{
       position: relative;
       margin: 0px;
-      color: white;
+      color: rgb(0, 0, 0);
       font-size: 230px;
-      font-weight: 500;
+      font-weight: 600;
       padding-right: 50px;
     }
 

@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PlayProvider } from "./(contexts)/Play";
 import { CanvasWrapper } from "./(components)/CanvasWrapper";
 import { Header } from "./(components)/Header";
@@ -10,31 +10,34 @@ import GoogleAnim from "./(components)/GoogleAnim";
 import { div } from "three/examples/jsm/nodes/Nodes.js";
 import "./firstStyle.css";
 import AmiesoComponent from "./(amieSO)/AmiesoComponent";
+import { AnimatePresence } from "framer-motion";
+import TopPreloader from "@/components/TopPreloader";
 
 export default function Home() {
-  const [landingVisible, setlandingVisible] = useState(true);
-  const [canvasVisible, setcanvasVisible] = useState(true);
-  // const [landingVisible, setlandingVisible] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const toggleLandingVisibility = () => {
-    setlandingVisible((prevVisibility) => !prevVisibility);
-  };
-  const toggleCanvasVisibility = () => {
-    setcanvasVisible((prevVisibility) => !prevVisibility);
-  };
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+
+      setTimeout(() => {
+        setIsLoading(false);
+        document.body.style.cursor = "default";
+        window.scrollTo(0, 0);
+      }, 2000);
+    })();
+  }, []);
 
   return (
     <PlayProvider>
+      <AnimatePresence mode="wait">
+        {isLoading && <TopPreloader />}
+      </AnimatePresence>
       <CanvasWrapper />
       {/* <GoogleAnim /> */}
       {/* <AmiesoComponent /> */}
     </PlayProvider>
-
-    // <div className="p-2 w-[800px] h-[800px] bg-red-600">
-    //   <div className="h-full w-full overflow-auto">
-    //     <GoogleAnim />
-    //   </div>
-    // </div>
   );
 }
 

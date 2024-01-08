@@ -51,15 +51,10 @@ export default function Home() {
       {/* <Image src="/images/background.jpg" fill={true} alt="background" /> */}
       <div className={styles.sliderContainer}>
         <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>About Us - </p>
-          <p ref={secondText}>About Us</p>
+          <p ref={firstText}>PARTS - </p>
+          <p ref={secondText}>PARTS</p>
         </div>
       </div>
-      <div
-        data-scroll
-        data-scroll-speed={0.1}
-        className={styles.description}
-      ></div>
     </motion.main>
   );
 }

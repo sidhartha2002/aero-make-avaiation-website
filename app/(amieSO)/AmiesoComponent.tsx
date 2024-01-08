@@ -124,7 +124,7 @@ function AmiesoComponent() {
 
   return (
     /*max-w-6xl*/
-    <div className="mx-auto px-4">
+    <div className="mx-auto px-4 md:px-14">
       <Hero />
       <div ref={scope}>
         {features.map((feature) => (
@@ -157,7 +157,7 @@ function AmiesoComponent() {
           </div>
         </div>
       </div>
-      <div className="h-screen">Next Page Scroll</div>
+      {/* <div className="h-[60px]">Next Page Scroll</div> */}
     </div>
   );
 }
