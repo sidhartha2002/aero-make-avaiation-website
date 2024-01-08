@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import AmiesoComponent from "../(amieSO)/AmiesoComponent";
+import HomeComp from "../../components/HomeComp";
 
 export default function SectionHome() {
   const [landingVisible, setlandingVisible] = useState(true);
@@ -17,6 +18,7 @@ export default function SectionHome() {
   return (
     <div>
       <AmiesoComponent />
+      <HomeComp />
     </div>
   );
 }
