@@ -39,4 +39,18 @@
 
         }
     }
+
+        @media (max-width: 768px) {
+        .body {
+            padding: 10px 10px 100px 50px;
+        }
+      }
+        @media (max-width: 768px) {
+        .body {
+            .nav {
+
+                font-size: 36px;
+            }
+        }
+      }
 }

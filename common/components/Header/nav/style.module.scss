@@ -9,7 +9,7 @@
     .body{
         box-sizing: border-box;
         height: 100%;
-        padding: 100px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -37,4 +37,14 @@
 
         }
     }
+
+    // @media (max-width: 768px) {
+    //     .body {
+    //       font-size: 100px;
+    //     }
+    //   }
+
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
 }

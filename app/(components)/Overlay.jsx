@@ -109,7 +109,7 @@ function ArrowLottie() {
     const anim = lottie.loadAnimation({
       container: animationContainer.current,
       renderer: "svg",
-      loop: false,
+      loop: true,
       autoplay: true,
       // initialSegment: [2, 125],
       path: animationData,
@@ -117,7 +117,7 @@ function ArrowLottie() {
     });
     setTimeout(() => {
       anim.play();
-    }, 2500);
+    }, 3500);
     return () => anim.destroy();
     // const anim = lottie.loadAnimation({
     //   container: animationContainer.current,

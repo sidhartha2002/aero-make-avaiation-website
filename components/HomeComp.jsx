@@ -44,15 +44,11 @@ export default function HomeComp() {
       {/* <Landing /> */}
 
       <Description />
-      <DescriptionCopy />
       <Description1 />
-      <Description2 />
-      <Description3 />
-      <Description4 />
 
-      <Projects />
+      {/* <Projects />
       <SlidingImages />
-      <Contact />
+      <Contact /> */}
     </main>
   );
 }
