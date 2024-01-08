@@ -3,21 +3,24 @@
     display: flex;
     z-index: 100;
     top: 0;
-    color: rgb(241, 3, 3);
+    color: rgb(62, 62, 62);
     padding: 50px;
     // justify-content: space-between;
     width: 100%;
     font-weight: 300;
     box-sizing: border-box;
     align-items: center;
-    font-size: 25px;
+    font-size: 20px;
     overflow: hidden;
+    font-weight: 500;
+    margin-right: 10px;
 
     .logo{
         display: flex;
         cursor: pointer;
         p{
-            margin: 0px;
+            margin-right: 100px;
+            margin-left: 20px;
             transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
         }
         .name{
@@ -42,7 +45,8 @@
         }
         &:hover{
             .copyright{
-                transform: rotate(360deg);
+                transform: rotate(10deg);
+                scale: 120%;
             }
             .name{
                 padding-right: 30px;
